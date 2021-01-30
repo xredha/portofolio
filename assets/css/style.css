@@ -1,0 +1,251 @@
+main {
+  height: 1200px;
+  /* background-color: tomato; */
+  margin: 130px 30px 0 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+aside {
+  /* background-color: purple; */
+  flex: 1;
+  height: 500px;
+  margin-left: 40px;
+}
+
+.container > article {
+  background-color: #101010;
+  flex: 3;
+  height: 500px;
+  border-radius: 15px;
+}
+
+.profile {
+  height: 400px;
+  background-color: #101010;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+}
+
+.photo {
+  width: 160px;
+  height: 160px;
+  background-image: url(../images/person/profile.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+td {
+  padding: 0 5px;
+}
+
+.data-profile td {
+  color: white;
+  font-size: 16px;
+}
+
+.data-profile img {
+  width: 35px;
+  height: 35px;
+}
+
+.contact {
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.inside-contact {
+  height: 60px;
+  width: 250px;
+  background-color: #6E5035;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  margin-top: 20px;
+  box-shadow: 0px 0px 10px 10px rgba(40,40,40,0.75);
+}
+
+.contact a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.container > article {
+  padding: 0 30px;
+}
+
+article h2 {
+  font-family: 'Paytone One', sans-serif;
+  font-size: 1.7em;
+  color: #6E5035
+}
+
+article > p {
+  text-align: justify;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.skill-flex {
+  /* background-color: aqua; */
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-column {
+  /* background-color: bisque; */
+  flex: 1;
+  /* border: 1px solid black; */
+  display: flex;
+}
+
+.skill-row {
+  flex: 1;
+  /* background-color: blue; */
+}
+
+.skill-row img {
+  width: 100px;
+}
+
+.skill-row p {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.article-services {
+  height: 600px;
+  background-color: #101010;
+  margin: 30px 0;
+  border-radius: 15px;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.article-services h2 {
+  font-family: 'Paytone One', sans-serif;
+  font-size: 1.7em;
+  color: #6E5035
+}
+
+.service-column {
+  display: flex;
+  /* background-color: aqua; */
+  flex: 1;
+}
+
+.service-row {
+  flex: 1;
+  /* background-color: bisque; */
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+.service-row img {
+  width: 60px;
+  height: 60px;
+}
+
+.service-row .title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.service-row p {
+  text-align: center;
+}
+
+.service-images {
+  /* background-color: black; */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-text {
+  /* background-color: blue; */
+  flex: 1;
+}
+
+@media only screen and (max-width: 1200px) {
+  main {
+    height: 1300px;
+  }
+
+  .container > article {
+    height: 600px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  main {
+    height: 2000px;
+  }
+
+  .container {
+    display: block;
+  }
+
+  .container > article {
+    padding: 10px 30px;
+  }
+
+  aside {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  main {
+    height: 2300px;
+  }
+
+  .service-column {
+    display: block;
+  }
+
+  .article-services {
+    height: 1100px;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  main {
+    height: 3500px;
+  }
+
+  .container > article {
+    height: 1400px;
+  }
+
+  .article-services {
+    height: 1400px;
+  }
+
+  .skill-column {
+    display: block;
+  }
+
+  .skill-flex {
+    text-align: center;
+  }
+}

@@ -1,0 +1,172 @@
+/* query margin .menu-all
+query postion dan display .dropdown */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #1B1C1D;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.5s;
+  z-index: 1;
+}
+
+.container-header {
+  background-color: #101010;
+  height: 100px;
+  display: flex;
+}
+
+.header1 {
+  /* background-color: tomato; */
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.header2 {
+  /* background-color: aqua; */
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header1 h1 {
+  font-family: 'Paytone One', sans-serif;
+  font-size: 2.5em;
+  color: #6E5035;
+  margin-left: 30px;
+}
+
+.header2 a {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #ffffff;
+  margin-right: 30px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer {
+  height: 150px;
+  background-color: #101010;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer img {
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+}
+
+.footer2 p {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.header2 a:hover {
+  color: #ffffff;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropbtn img {
+  width: 30px;
+}
+
+.dropdown {
+  overflow: hidden;
+  position: absolute;
+  display: none;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  padding: 14px 16px;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  /* background-color: #101010; */
+  /* border: 1px solid #ffffff; */
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 12px;
+  color: #101010;
+  text-decoration: none;
+  background-color: #ffffff;
+  /* border: 1px solid #ffffff; */
+  font-size: 16px;
+}
+
+.dropdown button {
+  background-color: #101010;
+  font-size: 18px;
+}
+
+.dropdown-content a:hover {
+  background-color: #101010;
+}
+
+.show {
+  display: block;
+}
+
+@media only screen and (max-width: 870px) {
+  .dropdown {
+    position: relative;
+    display: block;
+  }
+
+  .menu-all {
+    margin-right: 50px;
+  }
+
+  .menu-all > a {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .menu-all {
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .footer2 p {
+    font-size: 12px;
+  }
+}

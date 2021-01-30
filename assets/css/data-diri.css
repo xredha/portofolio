@@ -1,0 +1,189 @@
+main {
+  height: 1300px;
+  /* background-color: aqua; */
+  margin-top: 100px;
+}
+
+.jumbotron {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  height: 350px;
+  background-image: url(../images/background/background.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  border-bottom: 7px solid #ffffff;
+}
+
+.background h1 {
+  margin: 0;
+  font-size: 2.2em;
+  font-weight: bold;
+}
+
+.background h2 {
+  font-size: 1.5em;
+  font-weight: normal;
+  margin-bottom: 100px;
+}
+
+.profil-image {
+  /* background-color: teal; */
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  position: relative;
+  margin-top: -75px;
+  border-radius: 50%;
+  background-image: url(../images/person/profile.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 7px solid #ffffff;
+}
+
+.content {
+  background-color: #101010;
+  margin: 30px 175px;
+  padding: 10px;
+  height: 700px;
+  border-radius: 30px;
+}
+
+.content p {
+  font-family: 'Paytone One', sans-serif;
+  font-size: 2.5em;
+  color: #6E5035;
+  text-align: center;
+}
+
+.container-content {
+  /* background-color: thistle; */
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+}
+
+.data-column {
+  flex: 1;
+  /* background-color: black; */
+  display: flex;
+}
+
+.data-row {
+  flex: 1;
+  /* background-color: blanchedalmond; */
+  margin: 5px;
+  padding: 10px;
+}
+
+.data-row img {
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.data-images {
+  display: flex;
+  justify-content: center;
+}
+
+.data-text table {
+  table-layout: auto;
+  width: 80%;
+  margin: auto;
+}
+
+.one {
+  width: 20%;
+}
+
+.two {
+  width: 2%;
+}
+
+.three {
+  width: 58%;
+}
+
+td,li {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+  width: 80%;
+  margin: auto;
+  padding: 0;
+}
+
+@media only screen and (max-width: 1050px) {
+  main {
+    height: 1800px;
+  }
+
+  .content {
+    height: 1200px;
+  }
+
+  .data-column {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .content {
+    margin: 50px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .profil-image {
+    width: 130px;
+    height: 130px;
+  }
+
+  .data-row img {
+    height: 65px;
+  }
+
+  .data-text table {
+    width: 100%;
+  }
+  
+  .one {
+    width: 25%;
+  }
+  
+  .two {
+    width: 2%;
+  }
+  
+  .three {
+    width: 73%;
+  }
+  
+  ul {
+    width: 100%;
+  }
+
+  td,li {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 500px) and (min-height: 700px) {
+  main {
+    height: 1650px;
+  }
+
+  .content {
+    height: 1100px;
+  }
+}
